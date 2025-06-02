@@ -24,6 +24,9 @@ print(result)
 '''
 TRACING:
 
+nums = [1, 12, -5, -6, 50, 3]
+k = 4
+
 max_average is set to -infinity
 
 for loop:
@@ -34,6 +37,113 @@ for loop:
     12 + (-5) + (-6) + 50
     -5 + (-6) + 50 + 3
 
+    now, 
+    i = 0
+    summ = 0
+    j = 0, range = (i + k) => 0 + 4 -> 4 (so until 3rd index)
+
+    summ = summ + nums[j] -> summ + nums[0]
+    summ = 0 + 1
+    summ = 1
+
+    j = 1, range = (i + k) => 0 + 4 -> 4 (so until 3rd index)
+
+    summ = summ + nums[j] -> summ + nums[1]
+    summ = 1 + 12
+    summ = 13
+
+    j = 2, range = 4 (until 3rd index)
     
+    summ = summ + nums[j] -> summ + nums[2]
+    summ = 13 + (-5)
+    summ = 8
+
+    j = 3 (last)
+
+    summ = summ + nums[j] -> summ + nums[3]
+    summ = 8 + (-6)
+    summ = 2
+
+    average = summ / float(k) 
+    => 2 / 4 
+    average = 0.5
+
+    max_average = max(max_average, average)
+    -> max(-infinity, 0.5)
+    max_average = 0.5
+
+    --------------------------
+
+    i = 1
+    summ = 0
+    j = 1, range = (i + k) => 1 + 4 -> 5 (so until 4th index)
+
+    summ = summ + nums[j] -> summ + nums[1]
+    summ = 0 + 12
+    summ = 12
+
+    j = 2, range = (i + k) => 1 + 4 -> 5 ( until 4th index)
+
+    summ = summ + nums[j] -> summ + nums[2]
+    summ = 12 + (-5)
+    summ = 7
  
+    j = 3, range = (i + k) => 1 + 4 -> 5 (until 4th index)
+
+    summ = summ + nums[j] -> summ + nums[3]
+    summ = 7 + (-6)
+    summ = 1
+
+    j = 4, range = (i + k) => 1 + 4 -> 5 (last iteration)
+
+    summ = summ + nums[j] -> summ + nums[4]
+    summ = 1 + 50
+    summ = 51
+
+    average = summ / k
+    -> 51 / 4
+    average = 12.75
+
+    max_average = max(max_average, average)
+    max_average = max(0.5, 12.75)
+    max_average = 12.75
+
+    --------------------------
+
+    i = 2
+    summ = 0
+    j = 2, range = (i + k) => 2 + 4 -> 6 (so until 5th index)
+
+    summ = summ + nums[j] -> summ + nums[2]
+    summ = 0 + (-5)
+    summ = -5
+
+    j = 3, range = (i + k) => 2 + 4 -> 6 ( until 5th index)
+
+    summ = summ + nums[j] -> summ + nums[3]
+    summ = -5 + (-6)
+    summ = -13
+ 
+    j = 4, range = (i + k) => 2 + 4 -> 6 (until 5th index)
+
+    summ = summ + nums[j] -> summ + nums[4]
+    summ = -13 + 50
+    summ = 37
+
+    j = 5, range = (i + k) => 2 + 4 -> 6 (last iteration)
+
+    summ = summ + nums[j] -> summ + nums[5]
+    summ = 37 + 3
+    summ = 40
+
+    average = summ / k
+    -> 40 / 4
+    average = 10
+
+    max_average = max(max_average, average)
+    max_average = max(12.75, 10)
+    max_average = 12.75
+
+    OUTPUT = max_average = 12.75
+
 '''

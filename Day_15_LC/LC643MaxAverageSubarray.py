@@ -1,3 +1,5 @@
+#Solution 1 - Time Limit Exceeded
+
 def findMaxAverage(nums, k):
     """
     :type nums: List[int]
@@ -147,3 +149,20 @@ for loop:
     OUTPUT = max_average = 12.75
 
 '''
+
+# Solution 2 -> Silding Window:
+
+def findMaxAverage2(nums, k):
+    window_sum = sum(nums[:k])
+    max_sum = window_sum
+
+    for i in range(k, len(nums)):
+        window_sum = window_sum + nums[i] - nums[i - k]
+        max_sum = max(window_sum, max_sum)
+
+    return max_sum / float(k)
+
+result2 = findMaxAverage2(nums, k)
+print(result2)
+
+

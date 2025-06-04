@@ -158,9 +158,4 @@ for i in len(flowerbed):
 
     Output - False
 
-
-
-    
-
-
 '''

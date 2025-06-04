@@ -165,4 +165,47 @@ def findMaxAverage2(nums, k):
 result2 = findMaxAverage2(nums, k)
 print(result2)
 
+'''
+TRACING :
 
+nums = [1, 12, -5, -6, 50, 3]
+k = 4
+
+window_sum = sum(nums[:k])
+window_sum = sum of all elements until k(not included)
+           = sum of ele until 4 -> 1 + 12 + (-5) + (-6)
+window_sum = 2
+max_sum = window_sum = 2
+
+for i in range(k, len(nums)):
+    range is from 4 to 6:
+    i = 4
+        window_sum = window_sum + nums[i] - nums[i - k]
+                   = 2 + nums[4] - nums[4 - 4]
+                   = 2 + 50 - nums[0]
+                   = 52 - (1)
+                   = 51
+        
+        max_sum = max(max_sum, window_sum)
+                = max(2, 51)
+        max_sum = 51
+
+    i = 5
+        window_sum = window_sum + nums[i] - nums[i - k]
+                   = 51 + nums[5] - nums[1]
+                   = 51 + 3 - 12
+                   = 42
+        
+        max_sum = max(max_sum, window_sum)
+                = max(51, 42)
+                = 51
+
+        
+    max_sum / k => 51 / 4
+                = 12.75
+
+
+
+
+
+'''

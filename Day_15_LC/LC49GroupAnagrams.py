@@ -5,8 +5,10 @@ def groupAnagrams(strs):
         for j in strs[1:]:  
             if j in nums:
                 continue
+            if strs[i] == j:
+                continue
             b = list(j)
-
+            
 
             if sorted(a) == sorted(b):
                 if strs[i] in nums:

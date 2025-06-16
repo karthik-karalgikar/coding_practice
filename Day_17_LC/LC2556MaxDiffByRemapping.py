@@ -21,7 +21,7 @@ def minMaxDifference(num):
     new_chars2 = []
     for i in numStr:
         if i == replace_for_min:
-            new_chars2.append('0')
+            new_chars2.append('1')
         else:
             new_chars2.append(i)
 
@@ -29,7 +29,7 @@ def minMaxDifference(num):
 
     return int(max_str) - int(min_str)
 
-num = 99
+num = 123456
 result = print(minMaxDifference(num))
 
 '''

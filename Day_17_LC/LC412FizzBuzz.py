@@ -1,4 +1,4 @@
-def fizzBuzz(self, n):
+def fizzBuzz(n):
         """
         :type n: int
         :rtype: List[str]

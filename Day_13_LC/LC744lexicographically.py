@@ -9,7 +9,7 @@ If such a character does not exist, return the first character in letters.
 def nextGreatestLetter(letters, target):
        
         for i in letters:
-            if i>target:
+            if i > target:
                 return i
 
         return letters[0]

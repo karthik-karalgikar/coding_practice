@@ -22,8 +22,8 @@ def matrixReshape(mat, r, c):
     return ans
 
 mat = [[1, 2], [3, 4]]
-r = 4
-c = 1
+r = 1
+c = 4
 result = matrixReshape(mat, r, c)
 print(result)
 

@@ -20,3 +20,10 @@ pattern = "abba"
 s = "dog cat cat dog" 
 result = wordPattern(pattern, s)
 print(result)
+
+'''
+TRACING : 
+
+Refer 205
+
+'''

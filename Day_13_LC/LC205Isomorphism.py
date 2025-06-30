@@ -114,8 +114,27 @@ for i, j in zip(s, t):
     i = a, j = d
 
     if (i in s_to_t and s_to_t[i] != j):
-        a in s_to_t -> false, s_to_t has only k and a
+        'a' in s_to_t -> false, s_to_t has only k 
 
-        (need to check if it checks both the key and value)
+    if j in s_to_t and s_to_t[i] != j:
+        'd' in s_to_t -> false
+
+    s_to_t[i] = j -> s_to_t[a] = d
+    t_to_s[j] = i -> t_to_s[d] = a
+
+    s_to_t = {'k' : 'a', 'a' : 'd'}
+    t_to_s = {'a' : 'k', 'd' : 'a'}
+
+    i = k, j = d
+
+    if i in s_to_t anf s_to_t[i] != j:
+        'k' in s_to_t -> true
+        s_to_t[i] != j -> s_to_t['k'] != 'd' -> true
+        return False
+
+    Output = False
+
+
+
 
 '''

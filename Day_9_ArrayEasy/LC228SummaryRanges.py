@@ -59,7 +59,7 @@ while loop:
 
         1 < 5 and nums[1] + 1 == nums[1 + 1]
         true and 1 + 1 == 2 -> 2 == 2 -> true
-        i = i + 1 => 1 = 2
+        i = i + 1 => i = 2
 
         2 < 5 and nums[2] + 1 == nums[2 + 1]
         true and 3 == 4 -> false

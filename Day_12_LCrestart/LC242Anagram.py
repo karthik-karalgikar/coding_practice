@@ -60,10 +60,16 @@ def isAnagramdict(s, t):
     t_to_s = {}
 
     for i in s:
-        s_to_t[i] = s_to_t.get(i, 0) + 1
+        if i in s_to_t:
+            s_to_t[i] = s_to_t[i] + 1
+        else:
+            s_to_t[i] = 1
 
     for i in t:
-        t_to_s[i] = t_to_s.get(i, 0) + 1
+        if i in t_to_s:
+            t_to_s[i] = t_to_s[i] + 1
+        else:
+            t_to_s[i] = 1
 
     if s_to_t == t_to_s:
         return True

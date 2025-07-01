@@ -26,7 +26,7 @@ def containsNearbyDuplicate(nums, k):
 
     return False
             
-nums = [1, 0, 1, 1]
+nums = [1, 2, 3, 1]
 k = 1
 result = containsNearbyDuplicate(nums, k)
 print(result)

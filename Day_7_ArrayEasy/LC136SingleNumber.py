@@ -67,3 +67,25 @@ for example:
     num : count
     so the num whose count is 1 is being returned. 
 '''
+
+def singleNumberMine(nums):
+    freq = {}
+
+    for i in nums:
+        if i in freq:
+            freq[i] = freq[i] + 1
+        else:
+             freq[i] = 1
+
+    for i in freq:
+        if freq[i] == 1:
+            return i
+            
+    return False
+
+nums = [4,1,2,1,2]
+print(singleNumberMine(nums))
+
+'''
+TRACING same as 169 and 229
+'''

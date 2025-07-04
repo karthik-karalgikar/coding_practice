@@ -56,4 +56,60 @@ def fibIteration(n):
 
     return n3
 
-print(fibIteration(n=5))     
+print(fibIteration(n=5)) 
+
+'''
+TRACING : 
+
+n = 5
+
+n1 = 0
+n2 = 1
+
+for i in range(2, n + 1):
+    -> i = 2, until 6
+    n3 = n1 + n2 -> 0 + 1
+    n3 = 1
+    n1 = n2 
+    n1 = 1
+    n2 = n3
+    n2 = 1
+
+    n1 = 1, n2 = 1
+
+    -> i = 3
+    n3 = n1 + n2
+    n3 = 2
+    n1 = n2
+    n1 = 1
+    n2 = n3
+    n2 = 2
+
+    n1 = 1, n2 = 2
+
+    -> i = 4
+    n3 = n1 + n2
+    n3 = 3
+    n1 = n2
+    n1 = 2
+    n2 = n3
+    n2 = 3
+
+    n1 = 2, n2 = 3
+
+    -> i = 5
+    n3 = n1 + n2
+    n3 = 5
+    n1 = n2
+    n1 = 3
+    n2 = n3
+    n2 = 5
+
+    n1 = 3, n2 = 5
+
+    -> i = 6 -> out of range
+
+    return n2
+
+    Output = 5
+'''

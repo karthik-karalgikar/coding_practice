@@ -10,3 +10,10 @@ def climbStairs(n):
     return n2
 
 print(climbStairs(n = 4))
+
+'''
+TRACING : 
+
+same as fibonacci series. 
+
+'''

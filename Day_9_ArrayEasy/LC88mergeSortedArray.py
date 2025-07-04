@@ -25,10 +25,36 @@ def merge(nums1, m, nums2, n):
     nums1.sort()
     return nums1
 
-nums1 = [1]
-m = 1 
-nums2 = [] 
-n = 0
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6] 
+n = 3
 result = merge(nums1, m, nums2, n)
 print(result)
+
+'''
+TRACING :
+
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6]
+n = 3
+
+nums1 = nums1[:m] -> until m -> until 2nd index(3 not included)
+nums1 = nums1[:3]
+nums1 = [1, 2, 3]
+
+nums1.extend(nums2[:n])
+
+nums2[:n] -> nums2[:3]
+
+nums2 = [2, 5, 6]
+
+nums1.extend([2, 5, 6])
+nums1 = [1, 2, 3, 2, 5, 6]
+
+nums1.sort() -> [1, 2, 2, 3, 5, 6]
+
+Output = [1, 2, 2, 3, 5, 6]
+'''
 

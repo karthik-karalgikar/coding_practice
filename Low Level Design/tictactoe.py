@@ -80,3 +80,28 @@ if __name__ == "__main__":
     game = Game(p1, p2, size = 3)
     game.play()
 
+
+'''
+TRACING :
+
+for a tic tac toe game, we need three classes - 
+Player
+Board
+Game
+
+For Player, the states are name and symbol
+
+For Board, the states are grid and size(default 3)
+and the behaviours that we need are 
+1. Display the board whenever we want to see the state of the board
+2. Place the player's move on the board
+3. Check if there is a winner by checking the row, column, diagonal and anti-diagonal
+4. Check if the board is full to see if there is a draw
+
+For Game, the states are board, players[] and currentTurn
+and the behaviours are 
+1. Play, to commence the game
+2. Switching turns
+
+
+'''

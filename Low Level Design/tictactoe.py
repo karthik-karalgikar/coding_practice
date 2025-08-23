@@ -102,6 +102,4 @@ For Game, the states are board, players[] and currentTurn
 and the behaviours are 
 1. Play, to commence the game
 2. Switching turns
-
-
 '''

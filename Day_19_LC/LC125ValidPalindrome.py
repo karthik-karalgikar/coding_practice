@@ -22,7 +22,8 @@ def isPalindrome(s):
         
     return cleaned == cleaned[::-1]
 
-s = "A man, a plan, a canal: Panama"
+# s = "A man, a plan, a canal: Panama"
+s = "abc123cba"
 print(isPalindrome(s))
 
 '''

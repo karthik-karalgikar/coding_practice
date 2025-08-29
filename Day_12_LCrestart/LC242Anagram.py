@@ -103,7 +103,7 @@ for i in s:
 
     So now, a does not exist. That's why 0 is returned. 
 
-    s_to_t['a'] = 1 + 1
+    s_to_t['a'] = 0 + 1
     s_to_t = {'a' : 1}
 
     -> i = 'n'

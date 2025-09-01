@@ -51,6 +51,6 @@ for i in range(1, len(nums)):
         right = [4]
         pivot = 3
 
-        return QuickSort(left)
+        return QuickSort(left) + [pivot] + 
 
 '''

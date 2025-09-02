@@ -25,3 +25,11 @@ b == 0
 returns a, i.e., 3
 GCD is 3
 '''
+
+def gcdIter(a, b):
+    while b != 0:
+        a, b = b, a % b
+
+    return a
+
+print(gcdIter(12, 9))

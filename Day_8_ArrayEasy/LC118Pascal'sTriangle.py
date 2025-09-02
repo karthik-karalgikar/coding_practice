@@ -60,7 +60,7 @@ else:
             -> j = 2 -> out of range
 
         list_i.append(1)
-        list_2.append(2)
+        list_2.append(1)
         list_2 = [1, 2, 1]
 
         endList.append(list_i)

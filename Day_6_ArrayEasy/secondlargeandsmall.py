@@ -3,7 +3,7 @@ QUESTION:
 Find Second Smallest and Second Largest Element in an array
 Problem Statement: Given an array, find the second smallest and 
 second largest element in the array. 
-Print ‘-1’ in the event that either of them doesn’t exist.
+Print '-1' in the event that either of them doesn't exist.
 '''
 
 #SOLUTION 1

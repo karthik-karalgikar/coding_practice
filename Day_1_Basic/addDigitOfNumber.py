@@ -32,3 +32,14 @@ print(twoDigitSum(two_digit_number))
  # two_digit_number = 3//10 = 0. 
  # While loop condition true. 
  # print sum. 
+
+def numberSum(number):
+   sum = 0
+   while number != 0:
+      sum = sum + (number % 10)
+      number = number // 10
+
+   return sum
+
+number = 339
+print(numberSum(number))

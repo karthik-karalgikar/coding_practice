@@ -11,7 +11,7 @@ def maximumDifference(nums):
     
     return max_diff
 
-nums = [7,1,5,4]
+nums = [7,1,5,3,6,4]
 print(maximumDifference(nums))
 
 '''

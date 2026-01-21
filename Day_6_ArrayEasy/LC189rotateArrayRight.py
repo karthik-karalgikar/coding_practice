@@ -20,6 +20,11 @@ print(result)
 '''
 TRACING
 
+k = 7
+k = k % len(nums)
+k = 7 % 2
+k = 1
+
 using slicing, 
 nums[-k:] means that nums is being updated by taking all the elements starting
 from -k to the end, that is, 
